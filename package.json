@@ -2,7 +2,7 @@
   "name": "crxray",
   "version": "0.1.0",
   "description": "Unpacks and audits browser extensions — permissions, remote code loading, obfuscation and tracker endpoints — with a transparent risk rubric, fully offline, for CRX and XPI both.",
-  "author": "JaydenCJ",
+  "author": "JaydenCJ <aisingioro.kiyon@gmail.com>",
   "license": "MIT",
   "type": "module",
   "bin": {
