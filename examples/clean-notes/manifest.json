@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Quick Notes",
+  "version": "1.3.0",
+  "description": "A tiny note pad that lives in your toolbar. Everything stays local.",
+  "permissions": ["storage"],
+  "action": {
+    "default_title": "Quick Notes",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "icons/16.png",
+    "48": "icons/48.png",
+    "128": "icons/128.png"
+  }
+}

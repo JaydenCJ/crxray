@@ -1,0 +1,54 @@
+{
+  "name": "crxray",
+  "version": "0.1.0",
+  "description": "Unpacks and audits browser extensions — permissions, remote code loading, obfuscation and tracker endpoints — with a transparent risk rubric, fully offline, for CRX and XPI both.",
+  "author": "JaydenCJ",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "crxray": "dist/cli.js"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "examples",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test \"tests/*.test.mjs\"",
+    "smoke": "bash scripts/smoke.sh"
+  },
+  "keywords": [
+    "browser-extension",
+    "crx",
+    "xpi",
+    "security-audit",
+    "static-analysis",
+    "supply-chain",
+    "forensics",
+    "cli"
+  ],
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JaydenCJ/crxray.git"
+  },
+  "homepage": "https://github.com/JaydenCJ/crxray#readme",
+  "bugs": {
+    "url": "https://github.com/JaydenCJ/crxray/issues"
+  }
+}

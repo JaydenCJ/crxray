@@ -1,0 +1,21 @@
+body {
+  width: 240px;
+  font: 13px/1.4 system-ui, sans-serif;
+  margin: 8px;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 8px;
+}
+li {
+  padding: 4px 6px;
+  border-bottom: 1px solid #eee;
+}
+form {
+  display: flex;
+  gap: 4px;
+}
+input {
+  flex: 1;
+}
